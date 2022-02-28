@@ -45,7 +45,7 @@ public class VehicleController
 
 	@GetMapping("/history/{vehicleName}")
 	@ResponseBody
-	@CrossOrigin(origins = "*")
+	@CrossOrigin
 	public Collection<LatLong> getHistoryFor(@PathVariable("vehicleName") String vehicleName)
 	{
 		Collection<LatLong> results = new ArrayList<>();
